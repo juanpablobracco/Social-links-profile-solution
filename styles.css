@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+    font-weight: 400, 600, 700;
+  }
+  
+  :root {
+    /* Colors */
+    --color-primary-green: hsl(75, 94%, 57%);
+  
+    --color-neutral-white: hsl(0, 0%, 100%);
+    --color-neutral-grey: hsl(0, 0%, 20%);
+    --color-neutral-dark-grey: hsl(0, 0%, 12%);
+    --color-neutral-off-black: hsl(0, 0%, 8%);
+  
+    /* Typography */
+    --font-family: "Inter", sans-serif;
+  
+    --font-size-heading: 2.4rem;
+    --font-size-body: 1.4rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    line-height: 150%;
+    font-weight: 400;
+    background-color: var(--color-neutral-off-black);
+    padding: 116px 24px;
+  }
+  
+  body,
+  a {
+    color: var(--color-neutral-white);
+  }
+  
+  main {
+    background-color: var(--color-neutral-dark-grey);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  img {
+    width: 88px;
+    border-radius: 50%;
+  }
+  
+  .name-location {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .name {
+    font-size: var(--font-size-heading);
+    line-height: 150%;
+    font-weight: 600;
+  }
+  
+  .location {
+    color: var(--color-primary-green);
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .bio {
+    text-align: center;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+  
+  .links a {
+    text-decoration: none;
+    font-weight: 700;
+    background-color: var(--color-neutral-grey);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    main {
+      width: 50%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      padding: 174px 0;
+    }
+  
+    main {
+      width: 100%;
+      min-width: 327px;
+      max-width: 384px;
+      padding: 40px;
+    }
+  
+    .links a:hover,
+    .links a:focus {
+      color: var(--color-neutral-grey);
+      background-color: var(--color-primary-green);
+    }
+  }
